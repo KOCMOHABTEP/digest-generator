@@ -6,7 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "SmirnovDS@alfastrah.ru",
+  "author": "dsmirnov.online@yandex.ru",
+  "contributors": [
+    "dsmirnov.online@yandex.ru",
+    "SmirnovDS@alfastrah.ru"
+  ],
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.27.5",
