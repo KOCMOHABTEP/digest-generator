@@ -7,7 +7,11 @@ const styleInject = require("gulp-style-inject");
 const browserSync = require("browser-sync").create();
 const clean = require("gulp-clean");
 
-const path = {
+
+const isDev = !!process.argv.includes("dev");
+console.log("Dev версия", isDev);
+
+let config = {
     build: {
         root: "./dist/",
         html: "./dist/*.html",
@@ -24,9 +28,18 @@ const path = {
     }
 };
 
+const buildConfig = {
+    src: {
+        pug: "./src/current.pug",
+        css: "./src/css/styles.scss"
+    }
+}
+
+// console.log("ПРОЦЕСС", process.argv)
+
 
 const buildPug = () => {
-    return src(path.src.pug)
+    return src(config.src.pug)
         .pipe(
             pug({
                 pretty: true
@@ -36,43 +49,47 @@ const buildPug = () => {
             prefix: "",
             suffix: ""
         }))
-        .pipe(dest(path.build.pug))
-        .pipe(browserSync.stream());;
+        .pipe(dest(config.build.pug))
+        .pipe(browserSync.stream());
 }
 
 const buildCSS = () => {
-    return src(path.src.css)
+    return src(config.src.css)
         .pipe(sass({
             outputStyle: 'compressed'
         }))
-        .pipe(dest(path.build.css))
+        .pipe(dest(config.build.css))
         .pipe(browserSync.stream());
 }
 
 const buildInlineCSS = () => {
-    return src(path.build.html)
+    return src(config.build.html)
         .pipe(styleInject())
-        .pipe(dest(path.build.root))
+        .pipe(dest(config.build.root))
         .pipe(browserSync.stream());
 }
 
 
 const cleanRootPath = () => {
-    return src(path.build.root, { allowEmpty: true })
+    return src(config.build.root, { allowEmpty: true })
         .pipe(clean())
 };
+
+const cleanBuildCssPath = () => {
+    return src(config.build.css, { allowEmpty: true })
+        .pipe(clean())
+}
 
 
 const $browserSync = (cb) => {
     browserSync.init({
         server: {
-            baseDir: path.build.root
+            baseDir: config.build.root
         },
     });
 
-    watch(path.watch.css, series(buildCSS, buildPug, buildInlineCSS));
-    watch(path.watch.pug, series(buildCSS, buildPug, buildInlineCSS));
-    // watch(path.build.html).on("change", browserSync.reload);
+    watch(config.watch.css, series(buildCSS, buildPug, buildInlineCSS));
+    watch(config.watch.pug, series(buildCSS, buildPug, buildInlineCSS));
 }
 
 const $dev = series(
@@ -85,14 +102,19 @@ const $dev = series(
     )
 )
 
-const $build = series(
-    cleanRootPath,
-    buildCSS,
-    buildPug,
-    buildInlineCSS,
-)
+const $build = () => {
+    if (!isDev) config = {...config, ...buildConfig};
 
-exports.build = $build;
+    return series(
+        cleanRootPath,
+        buildCSS,
+        buildPug,
+        buildInlineCSS,
+        cleanBuildCssPath,
+    )
+}
+
+exports.build = $build();
 exports.dev = $dev;
 
 
