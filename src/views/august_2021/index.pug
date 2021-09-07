@@ -1,54 +1,193 @@
 // inject-style src="./dist/css/styles.css"
-.lp-digest
-    .lp-digest-menu
-        a.lp-digest-menu__item(href="#digest-herald") ВЕСТНИК СТРАТЕГИЙ
-        a.lp-digest-menu__item(href="#digest-dynamics") ДИНАМИКА СТРАТЕГИЙ
-        a.lp-digest-menu__item(href="#digest-markets") ЧТО ПРОИСХОДИТ НА РЫНКАХ
-        a.lp-digest-menu__item(href="#digest-histories") ИСТОРИИ УСПЕХА
-        a.lp-digest-menu__item(href="#digest-ratings") РЕЙТИНГИ И СБОРЫ
-    #digest-ratings.lp-digest__title Рейтинги и сборы
-    p Для каждого дайджеста мы анализируем статистику по сборам текущего квартала и определяем лучших сотрудников. Они усердно работали и показали лучший результат.
-    p
-        b Уверены, достижения ваших коллег станут хорошим примером и вдохновят вас на активные продажи!
-    .lp-digest-section
-        .lp-digest-section-head
-            .lp-digest-section-heading
-                .lp-digest-section-heading-item.lp-digest-section-heading-item--left
-                    img(src="inline(./img/lp-digest-heading--left.png)")
-                .lp-digest-section-heading-item.lp-digest-section-heading-item--center
-                    b Лучший сотрудник макрорегиона
-                    p I квартал
-                .lp-digest-section-heading-item.lp-digest-section-heading-item--right
-                    img(src="inline(./img/lp-digest-heading--right.png)")
-        .lp-digest-section-body
-            table.lp-digest-table
-                tr
-                    td.lp-digest-table__cell Урал
-                    td.lp-digest-table__cell
-                        b Юлия Гапон
-                    td.lp-digest-table__cell.lp-digest-table__cell--red.lp-digest-table__cell--right 5 567 271 ₽
-                tr
-                    td.lp-digest-table__cell Южное Поволжье
-                    td.lp-digest-table__cell
-                        b Наталья Титкова
-                    td.lp-digest-table__cell.lp-digest-table__cell--red.lp-digest-table__cell--right 3 751 100 ₽
-                tr
-                    td.lp-digest-table__cell Южное Поволжье
-                    td.lp-digest-table__cell
-                        b Наталья Титкова
-                    td.lp-digest-table__cell.lp-digest-table__cell--red.lp-digest-table__cell--right 3 751 100 ₽
-    .lp-digest-section
-        .lp-digest-section-head
-            b ТОП-3 областных центра
-        .lp-digest-section-body
-            .lp-digest-section-row
-                .lp-digest-section-row-column
-                    .lp-digest-section-block
-                        .lp-digest-section-block-image
-                            img(src="inline(./img/lp-digest-map-pin.png)")
-                        .lp-digest-section-block-content
-                            .lp-digest-section-block-content-text Пермь
-                            .lp-digest-section-block-content-text 51 524 245 ₽
-                .lp-digest-section-row-column
-                .lp-digest-section-row-column
+.digest
+    .digest-menu
+        a.digest-menu__item(href="#digest-herald") ВЕСТНИК СТРАТЕГИЙ
+        a.digest-menu__item(href="#digest-dynamics") ДИНАМИКА СТРАТЕГИЙ
+        a.digest-menu__item(href="#digest-markets") ЧТО ПРОИСХОДИТ НА РЫНКАХ
+        a.digest-menu__item(href="#digest-histories") ИСТОРИИ УСПЕХА
+        a.digest-menu__item(href="#digest-ratings") РЕЙТИНГИ И СБОРЫ
 
+    //- Разделение блока
+    //- Рейтинги и сборы
+    #digest-ratings.digest-box
+        .digest-h1 Рейтинги и сборы
+        p Для каждого дайджеста мы анализируем статистику по сборам текущего квартала и определяем лучших сотрудников. Они усердно работали и показали лучший результат.
+        p
+            b Уверены, достижения ваших коллег станут хорошим примером и вдохновят вас на активные продажи!
+        .digest-section
+            .digest-section-head
+                .digest-section-heading
+                    .digest-section-heading-item.digest-section-heading-item--left
+                        img(src="inline(./img/lp-digest-heading--left.png)")
+                    .digest-section-heading-item.digest-section-heading-item--center
+                        .digest-section-heading-item__title Лучший сотрудник макрорегиона
+                        .digest-section-heading-item__caption I квартал
+                    .digest-section-heading-item.digest-section-heading-item--right
+                        img(src="inline(./img/lp-digest-heading--right.png)")
+            .digest-section-body
+                table.digest-table
+                    tr
+                        td.digest-table__cell Урал
+                        td.digest-table__cell
+                            b Юлия Гапон
+                        td.digest-table__cell.digest-table__cell--red.digest-table__cell--right 5 567 271 ₽
+                    tr
+                        td.digest-table__cell Южное Поволжье
+                        td.digest-table__cell
+                            b Наталья Титкова
+                        td.digest-table__cell.digest-table__cell--red.digest-table__cell--right 3 751 100 ₽
+                    tr
+                        td.digest-table__cell Южное Поволжье
+                        td.digest-table__cell
+                            b Наталья Титкова
+                        td.digest-table__cell.digest-table__cell--red.digest-table__cell--right 3 751 100 ₽
+        .digest-section
+            .digest-section-head
+                b ТОП-3 областных центра
+            .digest-section-body
+                .digest-row
+                    .digest-row-column
+                        .digest-section-block
+                            .digest-section-block-image
+                                img(src="inline(./img/lp-digest-map-pin.png)")
+                            .digest-section-block-content
+                                .digest-section-block-content__text
+                                    b Пермь
+                                .digest-section-block-content__text.digest-section-block-content__text--price 51 524 245 ₽
+                    .digest-row-column
+                        .digest-section-block
+                            .digest-section-block-image
+                                img(src="inline(./img/lp-digest-map-pin.png)")
+                            .digest-section-block-content
+                                .digest-section-block-content__text
+                                    b Комсомольск-на-Амуре
+                                .digest-section-block-content__text.digest-section-block-content__text--price 53 751 100 ₽
+                    .digest-row-column
+                        .digest-section-block
+                            .digest-section-block-image
+                                img(src="inline(./img/lp-digest-map-pin.png)")
+                            .digest-section-block-content
+                                .digest-section-block-content__text
+                                    b Нижний Новгород
+                                .digest-section-block-content__text.digest-section-block-content__text--price 553 751 100 ₽
+
+    //- Разделение блока
+    //- Вестник стратегий
+    #digest-herald.digest-box
+        .digest-h1 Вестник стратегий
+        .digest-section
+            img.digest__image(src="inline(./img/image.jpg)")
+        .digest-h3 Adidas к 2025 году пообещала увеличить выручку на треть
+        .digest-label Adidas к 2025 году пообещала увеличить выручку на треть
+        p Apple планирует построить в Мюнхене Европейский кремниевый дизайн-центр. Это предприятие будет работать над 5G и будущими беспроводными технологиями.
+        p Мюнхен — важный для Apple город; компания называет его своим крупнейшим инженерным хабом в Европе. У Apple там уже находится команда из 1500 человек, которая разрабатывает чипы контроля питания.
+        p Одно из главных преимуществ Apple в том, что компания сама производит многие компоненты своих устройств (главным образом чипы), а не заказывает их у сторонних производителей. Это позволяет ей добиться максимальной производительности и энергоэффективности.
+        .digest-section
+            img.digest__image(src="inline(./img/image.jpg)")
+
+    //- Разделение блока
+    //- Динамика стратегий
+    #digest-dynamics.digest-box
+        .digest-h1 Динамика стратегий и где за ней следить
+        .digest-section
+            img.digest__image(src="inline(./img/graphics.png)")
+        .digest-section
+            .digest-section-body
+                .digest-row
+                    .digest-row-column.digest-row-column--7
+                        p
+                            b Как вели себя стратегии ИСЖ и почему? На что влияют заявления глав государств и центральных банков, какие отчетности презентуют голубые фишки США, Европы и Азии?
+                        p Все это — в интерактивном Экспрессе. Просто вбейте название нужной стратегии в поисковую строку.
+                        p Калькулятор на Экспрессе поможет вам объяснить клиенту работу купонных стратегий. Он подгружает реальные закупки с конкретными датами, целевыми уровнями и купонами.
+                        p Для потенциальных клиентов вы рассчитаете доход исходя из суммы вноса, а для действующих — оцените промежуточный результат работы программы и её перспективы.
+                    .digest-row-column.digest-row-column--5
+                        img.digest__image(src="inline(./img/iphone.png)")
+    //- Разделение блока
+    //- Что происходит на рынках
+    #digest-markets.digest-box
+        .digest-h1 Рассказываем, как вели себя фондовые рынки в марте
+        .digest-section
+            img.digest__image(src="inline(./img/image.jpg)")
+        p Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Журчит великий, знаках все рот, текстов что океана обеспечивает напоивший реторический первую однажды переписали проектах возвращайся, вдали точках которое деревни.
+        .digest-label.digest-label--strong Тема коронавируса воспринимается противоречиво: с одной стороны позитивно оцениваются темпы массовой вакцинации в США и Китае, но с другой стороны рост заболеваемости в Европе, проблемы с вакциной от AstraZeneca (возникновении тромбов у ряда пациентов) и продление карантина во Франции воспринимается рынком как негативные факторы.
+
+    //- Разделение блока
+    //- <ПУСТО>
+    .digest-box
+        .digest-h1 Исследование
+        .digest-section
+            img.digest__image.digest__image--background(src="inline(./img/background.jpeg)")
+            .digest-row
+                .digest-row-column
+                    .digest-block
+                        .digest-section__title.digest-section__title--white Популярность компьютерных игр выросла благодаря пандемии
+                .digest-row-column
+                    .digest-block.digest-block--special
+                        .digest-block-head
+                            .digest-block-head__icon
+                                img(src="inline(./img/smile.png)", width="32px", height="32px")
+                            .digest-block-head__title Возросла потребность в социализации
+                        p Эксперты считают, что в связи с введением ковидных ограничений резко возросла потребность в социализации, а компьютерные игры идеально подходят, чтобы ее удовлетворить.
+                        .digest-label.digest-label--small Главный вывод: текущая ситуация сохранится и после снятия ограничений.
+                        p Значит, в выигрыше будут те, кто связан с видеоиграми (разработчики, производители игровых чипов и прочего железа).
+        .digest-row.digest-row--15
+            .digest-row-column
+                .digest-block.digest-block--special
+                    .digest-block-head
+                        .digest-block-head__icon
+                            img(src="inline(./img/smile.png)", width="32px", height="32px")
+                        .digest-block-head__title И что с геймерами?
+                    ul
+                        li Далеко-далеко за словесными горами в стране.
+                        li Силуэт, что прямо моей ipsum!
+                        li Инициал которой, дорогу живет алфавит!
+            .digest-row-column
+                .digest-block.digest-block--special
+                    .digest-block-head
+                        .digest-block-head__icon
+                            img(src="inline(./img/smile.png)", width="32px", height="32px")
+                        .digest-block-head__title И что с геймерами?
+                    p Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Бросил предупредила речью собрал на берегу.
+        .digest-section
+            img.digest__image.digest__image--background.digest__image--background--right(src="inline(./img/background.jpeg)")
+            .digest-row
+                .digest-row-column
+                    .digest-block.digest-block--special
+                        .digest-block-head
+                            .digest-block-head__icon
+                                img(src="inline(./img/smile.png)", width="32px", height="32px")
+                            .digest-block-head__title Возросла потребность в социализации
+                        p Эксперты считают, что в связи с введением ковидных ограничений резко возросла потребность в социализации, а компьютерные игры идеально подходят, чтобы ее удовлетворить.
+                        .digest-label.digest-label--small Главный вывод: текущая ситуация сохранится и после снятия ограничений.
+                        p Значит, в выигрыше будут те, кто связан с видеоиграми (разработчики, производители игровых чипов и прочего железа).
+                .digest-row-column
+                    .digest-block
+                        .digest-section__title.digest-section__title--white Популярность компьютерных игр выросла благодаря пандемии
+    //- Разделение блока
+    //- Истории успеха
+    #digest-histories.digest-box
+        .digest-h1 Истории успеха
+        .digest-row.digest-row--15
+            .digest-row-column--4
+                img(src="inline(./img/manager.png)", width="238px")
+            .digest-row-column--8
+                .digest-story
+                    .digest-story__title «Всегда легче продавать то, что ты продал бы сам себе»
+                    .digest-story__name Алёна Малых
+                    .digest-story__info Финансовый эксперт
+                    .digest-story__info Клиентский центр No613152, г. Слободской
+                    p Клиент, с которым оформили сделку по ИСЖ, был вкладчиком нашего банка уже три года. Общая сумма его вкладов составляла около 4 млн рублей. Каждый год он приезжал в наш город, чтобы переоформить договор, при этом проценты по вкладу он не снимал.  Еще год назад в процессе переоформления вклада я предложила ему заключить договор на более длительный срок с более высокой доходностью, но, к сожалению, на тот момент по программе ИСЖ действовали ограничения по возрасту, а моему клиенту было уже 83 года.
+                    .digest-story-block
+                        .digest-story-block-head
+                            .digest-story-block-head__icon
+                                img(src="inline(./img/Vector.png)", width="35px")
+                            .digest-story-block-head__title Инсайты
+                        p
+                            b Знать продукты банка на все сто.
+                            |  А также верить в них. Всегда легче продавать то, что ты продал бы сам себе, когда ты уверен, что продукт выгоден клиенту и клиент останется довольным.
+                    .digest-story-block
+                        .digest-motivation
+                            .digest-motivation-head
+                                .digest-motivation-head__title Мотивация сотрудника
+                                .digest-motivation-head__price + 500 000 ₽
+                            .digest-motivation-body Алёна продала старый автомобиль, вложила часть денег в новый, а вторую часть потратила на отпуск с семьей.
