@@ -7,9 +7,7 @@ const styleInject = require("gulp-style-inject");
 const browserSync = require("browser-sync").create();
 const clean = require("gulp-clean");
 
-
 const isDev = !!process.argv.includes("dev");
-console.log("Dev версия", isDev);
 
 let config = {
     build: {
