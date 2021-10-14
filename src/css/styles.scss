@@ -120,6 +120,7 @@ $box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
 
     &-column {
         flex: 1;
+        overflow: hidden;
         position: relative;
 
         &--4 {
@@ -198,6 +199,10 @@ $box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
     background: #ffffff;
     position: relative;
 
+    p {
+        font-size: 14px;
+    }
+
     &__title {
         font-size: 30px;
         font-weight: bold;
@@ -226,7 +231,7 @@ $box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
     }
 
     &-item__caption {
-        font-weight: 300;
+        font-weight: normal;
         opacity: 0.5;
     }
 
@@ -251,8 +256,13 @@ $box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
 
 .digest-block {
     font-size: 16px;
+    height: 100%;
     padding: 50px;
     position: relative;
+
+    & p, & .digest-label {
+        font-size: 15px;
+    }
 
     &--special {
         border-radius: 20px;
