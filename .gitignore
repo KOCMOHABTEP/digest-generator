@@ -2,4 +2,7 @@
 /.idea
 
 # Project exclude paths
-/node_modules/
+/node_modules
+/dist
+
+package-lock.json
