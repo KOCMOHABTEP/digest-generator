@@ -6,40 +6,74 @@ const base64 = require('gulp-base64-inline');
 const styleInject = require("gulp-style-inject");
 const uglify = require("gulp-uglify");
 const inject = require('gulp-inject');
-
 const browserSync = require("browser-sync").create();
 const clean = require("gulp-clean");
 
-const isDev = !!process.argv.includes("dev");
+this.context = null;
+this.contextProcess = null;
+
+if (process.argv.includes("$build_digest")) {
+    console.log({context: "digest", contextProcess: "build"})
+    this.context = "digest";
+    this.contextProcess = "build";
+}
+
+if (process.argv.includes("$dev_digest")) {
+    console.log({context: "digest", contextProcess: "dev"})
+    this.context = "digest";
+    this.contextProcess = "dev";
+}
+
+if (process.argv.includes("$build_report")) {
+    console.log({context: "report", contextProcess: "build"})
+    this.context = "report";
+    this.contextProcess = "build";
+}
+
+if (process.argv.includes("$dev_report")) {
+    console.log({context: "report", contextProcess: "dev"})
+    this.context = "report";
+    this.contextProcess = "dev";
+}
 
 let config = {
     build: {
-        root: "./dist/",
-        html: "./dist/*.html",
-        css: "./dist/css",
-        js: "./dist/js",
-        img: "./dist/img",
-        pug: "./dist/",
+        root: `./dist/`,
+        html: `./dist/*.html`,
+        css: `./dist/css`,
+        js: `./dist/js`,
+        img: `./dist/img`,
+        pug: `./dist/`,
     },
     src: {
-        pug: "./src/*.pug",
-        css: "./src/css/*.scss",
-        js: "./src/js/*.js"
+        pug: `./src/${this.context}/*.pug`,
+        css: `./src/${this.context}/css/*.scss`,
+        js: `./src/${this.context}/js/*.js`
     },
     watch: {
-        pug: "./src/**/*.pug",
-        css: "./src/css/**/*.scss",
-        js: "./src/js/*.js"
+        pug: `./src/${this.context}/**/*.pug`,
+        css: `./src/${this.context}/css/**/*.scss`,
+        js: `./src/${this.context}/js/*.js`
     }
 };
-
 const buildConfig = {
-    src: {
-        pug: "./src/current.pug",
-        css: "./src/css/styles.scss",
-        js: "./src/js/script.js"
+    digest: {
+        src: {
+            pug: "./src/digest/current.pug",
+            css: "./src/digest/css/styles.scss",
+            js: "./src/digest/js/script.js"   
+        }
+    },
+    report: {
+        src: {} // TODO
     }
 }
+
+// это конфиг для build
+config = {
+    ...config,
+    ...(this.contextProcess === "build" ? buildConfig[this.context] : null),
+};
 
 
 const buildPug = () => {
@@ -127,21 +161,19 @@ const $dev = series(
     )
 )
 
-const $build = () => {
-    if (!isDev) config = {...config, ...buildConfig};
-
-    return series(
-        cleanRootPath,
-        buildCSS,
-        buildPug,
-        buildJS,
-        buildInlineComponents,
-        cleanBuildCssPath,
-        cleanBuildJsPath,
-    )
-}
-
-exports.build = $build();
-exports.dev = $dev;
+const $build = series(
+    cleanRootPath,
+    buildCSS,
+    buildPug,
+    buildJS,
+    buildInlineComponents,
+    cleanBuildCssPath,
+    cleanBuildJsPath,
+)
 
 
+exports.$dev_digest = $dev;
+exports.$dev_report = $dev;
+
+exports.$build_digest = $build;
+exports.$build_report = $build;
