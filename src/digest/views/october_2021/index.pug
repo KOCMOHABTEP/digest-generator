@@ -1,0 +1,231 @@
+// inject-style src="./dist/css/styles.css"
+// inject:script:js
+// endinject
+
+.digest
+    .digest-menu
+        a.digest-menu__item(data-custom-anchor href="#digest-ratings") РЕЙТИНГИ И СБОРЫ
+        a.digest-menu__item(data-custom-anchor href="#digest-herald") ВЕСТНИК СТРАТЕГИЙ
+        a.digest-menu__item(data-custom-anchor href="#digest-dynamics") ДИНАМИКА
+        a.digest-menu__item(data-custom-anchor href="#digest-read") ПОЧИТАТЬ
+        a.digest-menu__item(data-custom-anchor href="#digest-interesting") ВСЕМ ИНТЕРЕСНО
+
+    //- Разделение блока
+    //- Рейтинги и сборы
+    #digest-ratings.digest-box
+        .digest-h1 Рейтинги и сборы
+        p Для каждого дайджеста мы анализируем статистику по сборам текущего квартала и определяем лучших сотрудников. Они усердно работали и показали лучший результат.
+        p
+            b Уверены, достижения ваших коллег станут хорошим примером и вдохновят вас на активные продажи!
+        .digest-section
+            .digest-section-head
+                .digest-section-heading
+                    .digest-section-heading-item.digest-section-heading-item--left
+                        img(src="inline(./img/lp-digest-heading--left.png)")
+                    .digest-section-heading-item.digest-section-heading-item--center
+                        .digest-section-heading-item__title Лучший сотрудник макрорегиона
+                        .digest-section-heading-item__caption IV квартал
+                    .digest-section-heading-item.digest-section-heading-item--right
+                        img(src="inline(./img/lp-digest-heading--right.png)")
+            .digest-section-body
+                table.digest-table
+                    tr
+                        td.digest-table__cell Южное Поволжье
+                        td.digest-table__cell
+                            b Рустамов Амиль
+                        td.digest-table__cell.digest-table__cell--red.digest-table__cell--right 4 837 000 ₽
+                    tr
+                        td.digest-table__cell Северное Поволжье
+                        td.digest-table__cell
+                            b Александрова Анастасия
+                        td.digest-table__cell.digest-table__cell--red.digest-table__cell--right 4 350 000 ₽
+                    tr
+                        td.digest-table__cell Москва
+                        td.digest-table__cell
+                            b Галяткин Денис
+                        td.digest-table__cell.digest-table__cell--red.digest-table__cell--right 3 730 000 ₽
+                    tr
+                        td.digest-table__cell Северный Кавказ
+                        td.digest-table__cell
+                            b Анисимова Анастасия
+                        td.digest-table__cell.digest-table__cell--red.digest-table__cell--right 2 900 000 ₽
+                    tr
+                        td.digest-table__cell Центр
+                        td.digest-table__cell
+                            b Васильева Юлия
+                        td.digest-table__cell.digest-table__cell--red.digest-table__cell--right 2 400 000 ₽
+                    tr
+                        td.digest-table__cell Урал
+                        td.digest-table__cell
+                            b Горбунова Анастасия
+                        td.digest-table__cell.digest-table__cell--red.digest-table__cell--right 2 150 000 ₽
+        .digest-section
+            .digest-section-head
+                .digest-section-heading
+                    b ТОП-3 областных центра
+            .digest-section-body
+                .digest-row
+                    .digest-row-column
+                        .digest-section-block
+                            .digest-section-block-image
+                                img(src="inline(./img/lp-digest-map-pin.png)")
+                            .digest-section-block-content
+                                .digest-section-block-content__text
+                                    b Казань
+                                .digest-section-block-content__text.digest-section-block-content__text--price 28 463 278 ₽
+                    .digest-row-column
+                        .digest-section-block
+                            .digest-section-block-image
+                                img(src="inline(./img/lp-digest-map-pin.png)")
+                            .digest-section-block-content
+                                .digest-section-block-content__text
+                                    b Москва
+                                .digest-section-block-content__text.digest-section-block-content__text--price 27 597 158 ₽
+                    .digest-row-column
+                        .digest-section-block
+                            .digest-section-block-image
+                                img(src="inline(./views/september_2021/img/lp-digest-map-pin.png)")
+                            .digest-section-block-content
+                                .digest-section-block-content__text
+                                    b Набережные Челны
+                                .digest-section-block-content__text.digest-section-block-content__text--price 26 794 579 ₽
+
+    //- Разделение блока
+    //- Вестник стратегий
+    #digest-herald.digest-box
+        .digest-h1 Вестник стратегий
+        //- Блок 1
+        .digest-content
+            .digest-image
+                img(src="inline(./views/october_2021/img/image-iphone.jpg)")
+            .digest-h3 Apple сокращает производство iPhone 13
+            .digest-label Важно для стратегии «Всегда онлайн»
+            p По данным Bloomberg, Apple сокращает производство iPhone 13. Снижение ощутимое: смартфонов соберут на 10 миллионов меньше, чем планировали в 2021 году.
+            p
+                b Все дело в кризисе полупроводников.
+                |  Производители чипов не справляются с поставкой компонентов для новых смартфонов, производство перегружено. В Apple уже заявляли о задержках из-за жестких ковидных ограничений во Вьетнаме, где собирают новую камеру флагмана. О кризисе полупроводников и его причинах мы писали в июньском дайджесте.
+            p Снижение производства iPhone 13 может негативно сказаться на доходах Apple в IV квартале, перед новогодними праздниками. А это для компании ключевой период продаж.
+            p Аналитики инвестиционных банков Goldman Sachs и Bank of America ждут снижения выручки Apple. Аналитики Wedbush «не видят проблем», если часть продаж перейдет на весну. Там считают это временной заминкой в текущем суперцикле iPhone 12/13. При этом Morgan Stanley говорят: «Если краткосрочный спрос на смартфоны не может удовлетворить даже Apple, у ее конкурентов будут еще бóльшие проблемы, что создает потенциал для роста яблочных акций. Дело в том, что поставщики чипов сначала отдают предпочтение Apple, а потом уже остальным».
+        //- Блок 2
+        .digest-content
+            .digest-image
+                img(src="inline(./views/october_2021/img/image-spotify.jpg)")
+            .digest-h3 Spotify объявил о партнерстве с Shopify
+            .digest-label Важно для стратегий «Всегда онлайн» и «#оставайтесьдома 2.0»
+            p Шведский музыкальный стриминговый сервис Spotify объявил о заключении партнерства с платформой для создания интернет-магазинов Shopify.
+            p
+                | Благодаря этой интеграции
+                b  музыканты смогут продавать свою фирменную продукцию прямо в приложении Spotify.
+                |  В данный момент функция находится на стадии бета-тестирования. На первом этапе товары исполнителей со всего мира смогут приобрести слушатели из Австралии, Канады, Новой Зеландии, Великобритании и США.
+        //- Блок 3
+        .digest-content
+            .digest-image
+                img(src="inline(./views/october_2021/img/image-october_russians.jpg)")
+            .digest-h3 Большинство россиян не готовы инвестировать дольше чем на три года
+            .digest-label Важно для всех стратегий
+            p Эксперты Райффайзенбанка выяснили, как выглядит российский инвестор. Они провели опрос, в котором участвовали более 1000 мужчин и женщин старше 21 года из крупных городов России.
+            p
+                b Образование
+                br
+                | У 76% опрошенных есть высшее образование. Но профильное для торговли на рынках — только у 2%. При этом женщины по результатам опроса образованнее: у 80% из них есть «вышка» против 71% у мужчин.
+            p
+                b Инвестиционные решения
+                br
+                | 52% сами решают, куда вкладывать деньги — хотя и признаются, что специальными знаниями не обладают. 37% слушают советы из соцсетей и YouTube. Осознанные решения при наличии профессиональных знаний только у 4%.
+            p
+                b Склонность к риску
+                br
+                | В основном россияне не готовы рисковать — большинство опрошенных готовы только к 5-10% потерь. Падения в 25% не боятся 16% опрошенных, а потерять 40% готовы лишь 4% россиян. 9% респондентов вообще не готовы к какому-либо риску.
+            p
+                b Инвестиционный горизонт
+                br
+                | 48% опрошенных инвестируют на 1-3 года, но при этом 30% готовы продолжать, вплоть до 10 лет. Краткосрочные и долгосрочные стратегии интересны примерно одинаковому числу россиян — 10% и 12%, соответственно.
+    //- Разделение блока
+    //- Динамика стратегий
+    #digest-dynamics.digest-box
+        .digest-h1 Динамика стратегий
+        .digest-image
+            img(src="inline(./views/october_2021/img/chart-october_1.png)")
+        .digest-image
+            img(src="inline(./views/october_2021/img/chart-strategy_1.png)")
+        .digest-image
+            img(src="inline(./views/october_2021/img/chart-strategy_2.png)")
+
+    //- Разделение блока
+    //- Что происходит на рынках
+    #digest-read.digest-box
+        .digest-h1
+            | Что будет с фондовым рынком дальше?
+            br
+            | Рост или падение? Собрали мнения аналитиков
+        .digest-content
+            .digest-image
+                img(src="inline(./views/october_2021/img/image-october_fonds.jpg)")
+            p
+                b В октябре на фондовых рынках происходило много нестандартных событий. Цены на газ доходили почти до 2000 долларов, нефть поднялась выше 80 долларов, все заговорили об ускорении инфляции, фондовый индекс S&P 500 начала снижался, но зачем продолжил расти. В такой ситуации инвесторы пребывают в растерянности. Собрали мнения главных аналитиков с Уолл-стрит о том, чего ждать дальше.
+            .digest-h4 Главные цифры
+            .digest-label.digest-label--strong
+                b На 5%
+                |  — вырос индекс широкого рынка S&P 500 в октябре.
+                b 5,4%
+                | — инфляция в США за последние 12 месяцев (максимум с 2008).
+            .digest-h4 Одни советуют выкупать падение
+            p Инвестиционные банки Goldman Sachs и JPMorgan уверены, что рынок продолжит расти и советуют выкупать упавшие акции. По словам аналитиков, что текущий спад является возможностью для покупок. Фондовый рынок продолжит расти, как только инвесторы убедятся, что текущие темпы инфляции временные, считают они. Стратегии «выкупать падения» также советуют придерживаться в банке Barclays.
+            .digest-h4 Другие предупреждают о коррекции
+            p Аналитики банков Citi и Morgan Stanley возражают: «Покупайте акции из защитных секторов, скоро наступит коррекция на 10—20%». Росту технологического сектора может помешать энергетический кризис в Европе, неопределенность вокруг китайских компаний и сокращение монетарных стимулов ФРС США.
+            .digest-h4 Кто-то не верит в стагфляцию
+            p Стагфляция — неприятный процесс, который характеризуется застоем в экономике и одновременным ростом цен и безработицы. Некоторые инвесторы считают, что стагфляция угрожает дальнейшему росту рынка. Аналитики инвестиционного банка JPMorgan, напротив, говорят, что опасения насчет стагфляции скоро начнут снижаться.
+            .digest-h4 Что с этим делать
+            p В любой непонятной ситуации важно диверсифицировать вложения и распределять риски. То есть не вкладываться в один актив и дополнять портфель безопасными инструментами. В стратегиях инвестиционного страхования жизни компании с хорошими предпосылками роста и полная защита капитала — это позволит получить высокий потенциальный доход и защитить вложения от кризисов на рынке.
+
+    //- Разделение блока
+    //- ИНТЕРЕСНО
+    #digest-interesting.digest-box
+        .digest-h1 Всем интересно
+        .digest-content
+            .digest-section
+                .digest-row
+                    .digest-row-column
+                        .digest-image.digest-image--abs
+                            img(src="inline(./views/october_2021/img/image-october_ruble.jpg)")
+                        .digest-block
+                            .digest-section__title.digest-section__title--white Банк России повысил ставку. Что это значит для ИСЖ?
+                    .digest-row-column
+                        .digest-block.digest-block--special
+                            .digest-block-head
+                                .digest-block-head__icon
+                                    img(src="inline(./img/icon-rocket_32x32.png)", width="32px")
+                                .digest-block-head__title Ставка теперь 7,5% годовых
+                            p Банк России 22 октября повысил ключевую процентную ставку сразу на 0,75 процентного пункта — до 7,5% годовых. На будущих заседаниях ставка, возможно, снова будет повышена.
+                            p Еще год назад она была 4,25%. Регулятор пошел на ужесточение политики из-за разгона инфляции и инфляционных ожиданий. По данным Росстата, по итогам сентября 2021 года официальная инфляция в России достигла 7,4%.
+        .digest-row.digest-row--15
+            .digest-row-column
+                .digest-block.digest-block--special
+                    .digest-block-head
+                        .digest-block-head__icon
+                            img(src="inline(./img/icon-snail_32x32.png)", width="32px")
+                        .digest-block-head__title Повышение ставки замедляет инфляцию
+                    p Обычно это работает так. Более высокие процентные ставки делают деньги в стране дороже. Компании и люди менее охотно берут кредиты и меньше тратят. Более высокие ставки по депозитам заставляют людей больше откладывать. В результате спрос на товары и услуги замедляется, а цены снижаются.
+            .digest-row-column
+                .digest-block.digest-block--special
+                    .digest-block-head
+                        .digest-block-head__icon
+                            img(src="inline(./img/icon-chart_32x32.png)", width="32px")
+                        .digest-block-head__title Ставки по ИСЖ могут вырасти
+                    p Из-за роста процентных ставок купонные ставки по новым выпускам облигаций повышаются. Это касается и облигаций федерального займа, которые выпускает Министерство финансов РФ — их еще называют казначейскими.
+                    .digest-label.digest-label--small Более высокие ставки по казначейским облигациям влияют на рост ставок по ИСЖ, так как часть средств портфеля вкладывается в том числе в государственные облигации.
+
+        .digest-section
+            .digest-row
+                .digest-row-column
+                    .digest-block.digest-block--special
+                        .digest-block-head
+                            .digest-block-head__icon
+                                img(src="inline(./img/icon-shield_32x32.png)", width="32px")
+                            .digest-block-head__title Все дело в защитной части ИСЖ
+                        p Взнос в продукт ИСЖ делится на две части: рисковую и защитную. Рисковая часть используется для получения дополнительного инвестиционного дохода — если условия для начисления дохода будут выполнены. Защитная часть вкладывается в высоконадежные инструменты — облигации федерального займа и банковские депозиты. К концу действия полиса защитная часть увеличивается до 100% взноса и обеспечивает полный возврат средств.
+                .digest-row-column
+                    .digest-image.digest-image--abs
+                        img(src="inline(./views/october_2021/img/image-october_chart.jpg)")
+                    .digest-block
+                        .digest-section__title.digest-section__title--white Рост ставки ЦБ — рост ставок ИСЖ
