@@ -65,7 +65,11 @@ const buildConfig = {
         }
     },
     report: {
-        src: {} // TODO
+        src: {
+            pug: "./src/report/index.pug",
+            css: "./src/report/css/base.scss",
+            js: "./src/report/js/script.js"
+        }
     }
 }
 

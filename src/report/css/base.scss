@@ -1,0 +1,187 @@
+body {
+    font-family: "Segoe UI", serif;
+    color: #333333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+.section {
+    margin-bottom: 60px;
+    border-radius: 30px;
+    box-shadow: 0 4px 44px rgba(0, 0, 0, 0.25);
+    background: #ffffff;
+
+    &-head {
+        padding: 30px 60px;
+        border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+
+        &__title {
+            font-size: 60px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &-body {
+        padding: 0 60px;
+    }
+}
+
+.table {
+
+    &-column {
+        padding: 45px 0;
+
+        &--left {
+            padding-right: 80px;
+        }
+
+        &--right {
+            padding-left: 80px;
+        }
+
+        &--br {
+            border-right: solid 1px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    &-cell {
+        font-size: 28px;
+        padding: 10px 0;
+
+        &--bold {
+            font-weight: bold;
+        }
+
+        &--right {
+            text-align: right;
+        }
+    }
+}
+
+
+/* Секция "Шапка" */
+.section-header {
+    margin: 70px 0;
+
+    &-table {
+
+        &-icon {
+            width: 50px;
+            height: 50px;
+            background: #ee0029;
+        }
+
+        &-name {
+            font-size: 29px;
+            line-height: 150px;
+            letter-spacing: 10px;
+            color: rgba(0, 0, 0, 0.5);
+            padding-left: 50px;
+        }
+
+        &-line {}
+
+        &-logo {
+            width: 302px;
+        }
+    }
+
+}
+
+/* Секция "Полис в цифрах" */
+.section-info {
+    margin-bottom: 60px;
+
+    &__title {
+        font-size: 60px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+
+    &-table {
+
+        &__cell {
+            width: 25%;
+            padding-top: 40px;
+            padding-left: 25px;
+            border-left: solid 1px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    &-box {
+        &__name {
+            font-size: 28px;
+        }
+
+        &__money {
+            font-size: 72px;
+            font-weight: bold;
+            color: #EE0029;
+        }
+    }
+}
+
+/* Секция "Стратегии в портфеле" */
+.section-strategy {
+    &-table {
+
+        &__head {
+            font-size: 28px;
+            font-weight: normal;
+            text-align: left;
+            color: #ee0029;
+            padding-bottom: 15px;
+        }
+
+        &__cell {
+            font-size: 28px;
+            padding: 10px 0;
+        }
+    }
+
+    &-item {
+
+        &__num {
+            font-size: 28px;
+            width: 36px;
+            color: #333333;
+            opacity: 0.7;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        &-icon {
+            width: 60px;
+            height: 60px;
+            overflow: hidden;
+            border-radius: 50%;
+            background: #ffffff;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+
+
+            &__image {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+        }
+
+        &__name {
+            font-size: 28px;
+            font-weight: bold;
+            padding-left: 20px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+}
