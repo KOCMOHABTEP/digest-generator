@@ -1,4 +1,4 @@
-$color-red: #D02C31;
+$color-red: #EE0029;
 $color-green: #00AF41;
 $box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
 
@@ -212,6 +212,10 @@ $box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
         &--white {
             color: #ffffff;
         }
+
+        &--centered {
+            margin: auto;
+        }
     }
 }
 
@@ -261,6 +265,8 @@ $box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
     height: 100%;
     padding: 50px;
     position: relative;
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
 
     & p, & .digest-label {
