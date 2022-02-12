@@ -1,0 +1,255 @@
+// inject-style src="./dist/css/styles.css"
+// inject:script:js
+// endinject
+
+.digest
+    .digest-menu
+        a.digest-menu__item(data-custom-anchor href="#digest-ratings") РЕЙТИНГИ И СБОРЫ
+        a.digest-menu__item(data-custom-anchor href="#digest-herald") ВЕСТНИК СТРАТЕГИЙ
+        a.digest-menu__item(data-custom-anchor href="#digest-dynamics") ДИНАМИКА
+        a.digest-menu__item(data-custom-anchor href="#digest-read") ПОЧИТАТЬ
+        a.digest-menu__item(data-custom-anchor href="#digest-interesting") ВСЕМ ИНТЕРЕСНО
+
+    //- Разделение блока
+    //- Рейтинги и сборы
+    #digest-ratings.digest-box
+        .digest-h1 Рейтинги и сборы
+        p
+            b Для каждого дайджеста мы анализируем статистику по сборам текущего квартала и определяем лучших сотрудников. Они усердно работали и показали лучший результат.
+        p
+            b Уверены, достижения ваших коллег станут хорошим примером и вдохновят вас на активные продажи!
+
+        .digest-section
+            .digest-section-head
+                .digest-section-heading
+                    .digest-section-heading-item.digest-section-heading-item--left
+                        img(src="inline(./img/lp-digest-heading--left.png)")
+                    .digest-section-heading-item.digest-section-heading-item--center
+                        .digest-section-heading-item__title Лучший сотрудник макрорегиона
+                            .digest-section-heading-item__caption I квартал
+                    .digest-section-heading-item.digest-section-heading-item--right
+                        img(src="inline(./img/lp-digest-heading--right.png)")
+            .digest-section-body
+                table.digest-table
+                    tr
+                        td.digest-table__cell Южное Поволжье
+                        td.digest-table__cell Надежда Мутолапова
+                        td.digest-table__cell.digest-table__cell--red
+                            b 3 485 000 ₽
+                    tr
+                        td.digest-table__cell Центр
+                        td.digest-table__cell Дарья Потапова
+                        td.digest-table__cell.digest-table__cell--red
+                            b 3 190 000 ₽
+                    tr
+                        td.digest-table__cell Северное Поволжье
+                        td.digest-table__cell Анастасия Стушнова
+                        td.digest-table__cell.digest-table__cell--red
+                            b 3 000 000 ₽
+                    tr
+                        td.digest-table__cell Северный Кавказ
+                        td.digest-table__cell Людмила Трибурт
+                        td.digest-table__cell.digest-table__cell--red
+                            b 2 726 527 ₽
+                    tr
+                        td.digest-table__cell Урал
+                        td.digest-table__cell Ульяна Куляшова
+                        td.digest-table__cell.digest-table__cell--red
+                            b 2 399 000 ₽
+                    tr
+                        td.digest-table__cell Москва
+                        td.digest-table__cell Надежда Сапожникова
+                        td.digest-table__cell.digest-table__cell--red
+                            b 2 000 000 ₽
+        .digest-section
+            .digest-section-head
+                .digest-section-heading
+                    b Лучшие областные центры
+            .digest-section-body
+                .digest-row
+                    .digest-row-column
+                        .digest-section-block
+                            .digest-section-block-image
+                                img(src="inline(./views/january_2022/img/lp-digest-map-pin.png)")
+                            .digest-section-block-content
+                                .digest-section-block-content__text
+                                    b Воронеж
+                                .digest-section-block-content__text.digest-section-block-content__text--price 21 816 024 ₽
+                    .digest-row-column
+                        .digest-section-block
+                            .digest-section-block-image
+                                img(src="inline(./views/january_2022/img/lp-digest-map-pin.png)")
+                            .digest-section-block-content
+                                .digest-section-block-content__text
+                                    b Москва
+                                .digest-section-block-content__text.digest-section-block-content__text--price 15 665 000 ₽
+                    .digest-row-column
+                        .digest-section-block
+                            .digest-section-block-image
+                                img(src="inline(./views/january_2022/img/lp-digest-map-pin.png)")
+                            .digest-section-block-content
+                                .digest-section-block-content__text
+                                    b Самара
+                                .digest-section-block-content__text.digest-section-block-content__text--price 15 363 720 ₽
+
+    //- Разделение блока
+    //- Вестник стратегий
+    #digest-herald.digest-box
+        .digest-h1 Вестник стратегий
+        //- Блок 1
+        .digest-content
+            .digest-image
+                img(src="inline(./views/january_2022/img/block_4.png)")
+            .digest-h3 Сезон отчетов
+            p В январе компании публиковали квартальную отчетность. Вот некоторые важные для наших стратегий.
+            ul.digest-content-list
+                li
+                    b Paypal
+                    div.digest-content-list__label Важно для стратегии «Драйверы роста»
+                    | Доход компании вырос на 13 % за IV квартал 2021 года, но это стало самым низким приростом за последние два года. А выручка и прибыль на следующий квартал, по прогнозам компании, будут и того ниже из-за окончания действия соглашения между PayPal и eBay.
+                li
+                    b Apple
+                    div.digest-content-list__label Важно для стратегии «Всегда онлайн»
+                    | Прогнозы аналитиков побиты — выросли все направления, за исключением продаж iPad (минус 14 % г/г). Тим Кук связал это с перераспределением ключевых комплектующих на производство iPhone. Выручка прибавила 11 %, достигнув рекорда в 123,9 млрд долл., а прибыль на акцию составила 2,1 долл. По данным консалтинговой компании Counterpoint Research, Apple вернула себе первое место на китайском рынке — впервые за 6 лет. По сообщению Bloomberg, уже этой весной Apple планирует самый широкий спектр запусков, включая новый iPhone SE и iPad Air с 5G. Осенью также могут появиться обновленные Apple Watch, четыре новых iPhone и несколько моделей Mac.
+                li
+                    b AMD
+                    div.digest-content-list__label Важно для стратегии «Всегда онлайн»
+                    | В годовом выражении выручка увеличилась на 49 %, а прибыль на акцию — на 26 %. А в 2022 году AMD ожидает объема продаж в 21,5 млрд долл. против 19,26 млрд долл. по прогнозам аналитиков. Все это стало драйвером роста акций компании — после публикации отчета они подскочили на 14 %.
+                li
+                    b ExxоnMobil
+                    div.digest-content-list__label Важно для стратегии «Драйверы роста»
+                    | ExxonMobil заработала 23 млрд долл. в 2021 году и инициировала программу обратного выкупа акций на 10 млрд долл. Прибыль за четвертый квартал 2021 года составила 8,9 млрд долл., или 2,08 долл. на акцию, что на 11 центов больше прогнозов аналитиков. Таким образом, компания сообщила о самой большой прибыли за семь лет благодаря высоким ценам на нефть.
+                li
+                    b Netflix
+                    div.digest-content-list__label Важно для стратегии Stayathome 2.0
+                    | Прирост числа новых подписчиков не оправдал ожиданий рынка — акции Netflix упали на 20 %. В конце прошлого года аудитория сервиса должна была вырасти на 8,5 млн человек, а прибавила только 8,2 млн. Ожидания также меньше консенсус-прогноза аналитиков. Главной причиной замедления роста аудитории называют усиление конкуренции в отрасли. При этом финансовые показатели — выручка и чистая прибыль — выросли на 16 и 12 % соответственно.
+        //- Блок 2
+        .digest-content
+            .digest-image
+                img(src="inline(./views/january_2022/img/block_1.png)")
+            .digest-h3 Microsoft объявила о покупке разработчика Warcraft, Diablo и Call of Duty
+            .digest-label Важно для стратегии Stayathome 2.0
+            p Компания Microsoft купит компанию Activision Blizzard за 68,7 млрд долл. Сделка завершится в 2023 году, после ее закрытия Microsoft станет третьей по величине игровой компанией в мире. По условиям сделки Microsoft получит права на культовые франшизы, а также на проведение киберспортивных состязаний через Major League Gaming.
+            p «Мы вкладываем значительные средства в контент мирового класса, развитие игрового сообщества и облачные технологии, чтобы открыть новую эру, где игроки и создатели игр будут стоять на первом месте, а сами игры будут безопасными, инклюзивными и доступными для всех», — рассказал о планах компании глава Microsoft Сатья Наделла.  В отчете о результатах второго квартала 2021 года Activision Blizzard сообщила о выручке 2,3 млрд долл. (прирост составил 16 %). Из них 568 млн долл. принесли продажи товаров, 1,7 млрд долл. — внутриигровые траты пользователей, подписки и остальные сегменты.
+        //- Блок 3
+        .digest-content
+            .digest-image
+                img(src="inline(./views/january_2022/img/block_2.png)")
+            .digest-h3 Shopify: экспансия в Китай
+            .digest-label Важно для стратегии Stayathome 2.0
+            p По сообщению CNBC, Shopify заключила соглашение о сотрудничестве с JD.com для продвижения в Китай. Партнерство позволит канадской онлайн-площадке предлагать товары 550 млн клиентов JD в Китае. Сотрудничество с Shopify в первую очередь поможет JD в конкуренции с Alibaba, которая за прошлый год вывела на китайский рынок более 6 тыс. иностранных брендов.
+            p Всего на площадках Alibaba представлены 35 тыс. международных брендов. Вторая часть сделки предполагает, что китайские товары будут также продаваться на Shopify. Китайская компания будет заниматься конвертацией цен и доставкой из США в Китай через свое логистическое подразделение.
+            p Для JD.com партнерство — это возможность усилить присутствие за пределами Китая и повысить свое конкурентное преимущество за счет зарубежных брендов.
+        //- Блок 4
+        .digest-content
+            .digest-image
+                img(src="inline(./views/january_2022/img/block_3.png)")
+            .digest-h3 «Магазины будущего» от Amazon
+            .digest-label Важно для стратегии Stayathome 2.0
+            p Amazon планирует открыть розничный магазин одежды под брендом компании уже в 2022 году. Первый собственный магазин одежды Amazon Style заработает в торговом центре The Americana at Brand в Лос-Анджелесе.
+            p Выбор одежды будет максимально технологичным: доступные размеры, цвета и оценки товара можно отследить по QR-кодам на вешалках, товары отправятся в примерочную одним нажатием кнопки, а алгоритм предложит посетителям другие товары, которые могут им понравиться. Примерочные оснастят сенсорными экранами, с помощью которых покупатели смогут попросить дополнительные товары и нужный размер. Также Amazon Style будет поддерживать технологию Amazon One, которая позволяет оплачивать товары с помощью отпечатка ладони. Технологичные нововведения не отменяют присутствия традиционных сотрудников.
+            p У ИТ-гиганта уже есть подобные проекты, реализованные довольно успешно: ранее Amazon представил бесконтактные магазины продуктов Amazon Go и Amazon Fresh, оснащенные технологией Just Walk Out. Таким образом Amazon переосмысливает традиционную розничную торговлю, представляя «магазины будущего».
+    //- Разделение блока
+    //- Динамика стратегий
+    #digest-dynamics.digest-box
+        .digest-h1 Динамика стратегий
+        .digest-image
+            img(src="inline(./views/january_2022/img/chart-january_1.png)")
+        .digest-image
+            img(src="inline(./views/january_2022/img/chart-strategy-january_1.png)")
+        .digest-image
+            img(src="inline(./views/january_2022/img/chart-strategy-january_2.png)")
+
+    //- Разделение блока
+    //- Что происходит на рынках
+    #digest-read.digest-box
+        .digest-h1
+            | Январь глазами инвестора
+        .digest-content
+            .digest-image
+                img(src="inline(./views/january_2022/img/image-january_invest.png)")
+            p
+                b Январь 2022 года с тал вторым худшим месяцем в истории для фондового рынка. В этом году «эффекта января» не случилось . По итогам месяца   S&P 500 упал на 7 %, а NASDAQ Composite — почти на 12 %.
+            .digest-h4 Главные цифры
+            .digest-label.digest-label--strong
+                b 5 этапов в сумме на 125 б.п.
+                |  – Ожидания по ставке ФРС.
+                br
+                b — 9 %
+                |   – NASDAQ 100.
+            p
+                b Чем вызвано такое падение?
+            ul
+                li
+                    p
+                        b Сезон отчетности.
+                        |  Первыми традиционно отчитались банки — с переменным успехом. Большинство компаний отмечало риск роста издержек в 2022 г. из-за высокой инфляции. Сезон отчетностей был одним из самых неудачных за последние годы, причем в этом периоде компании намного чаще снижали прогнозы по сравнению с другими сезонами.
+                li
+                    p
+                        b Геополитика.
+                        |  Отношения между США и Россией также не добавляют спокойствия фондовым рынкам. В ожидании новых санкций, главной из которых может стать отключение российских банков от международной системы SWIFT, акции крупнейших российских компаний уже упали. А растущие цены на нефть пугают американских инвесторов — вдруг поток нефти из России будет ограничен. То же самое касается и газа, который критически важен уже для Европы. Ситуация напоминает 2014 г., когда Запад так же грозился отключить Россию от SWIFT и наложить другие санкции.
+
+                li
+                    p
+                        b Высокая инфляция и ожидания роста ставки ФРС.
+                        |  Американский регулятор в 2021 году держал ставку на околонулевом уровне, что стало сильным драйвером роста рынка — в особенности IT-компании. Но в декабре 2021 г. инфляция достигла рекордного за 40 лет уровня 7%. Уже в конце 2021 года в ФРС заговорили о сворачивании политики QE и увеличении ключевой ставки. Инвесторы испугались, что ФРС будет повышать ставку быстрее запланированного — риторика Пауэлла была весьма жесткой. От повышения ставки наиболее сильно страдают быстрорастущие компании, которые, как правило, относятся к технологическому сектору. В результате сильнее всего обвалились акции интернет-компаний и сектор биотехнологий (потери отдельных компаний доходили до минус 70 %) и производители полупроводников (до минус 35 %). В результате динамика технологического индекса NASDAQ в январе была заметно хуже других основных индексов. Лучше всех показал себя сектор энергетики на фоне роста цен на нефть (Brent достигала 90 долл. за баррель) и финансовый сектор, который выигрывает от роста ставок.
+
+    //- Разделение блока
+    //- ИНТЕРЕСНО
+    #digest-interesting.digest-box
+        .digest-h1 Всем интересно
+        .digest-content
+            .digest-section
+                .digest-row
+                    .digest-row-column
+                        .digest-image.digest-image--abs
+                            img(src="inline(./views/january_2022/img/image-january_classified.png)")
+                        .digest-block
+                            .digest-section__title.digest-section__title--white.digest-section__title--centered
+                                | Закон о неквалифицированных инвесторах.
+                                br
+                                |  Что нового?
+                    .digest-row-column
+                        .digest-block.digest-block--special
+                            .digest-block-head
+                                .digest-block-head__icon
+                                    img(src="inline(./img/icon-bell_32x32.png)", width="32px")
+                                .digest-block-head__title Напоминаем
+                            p С 1 октября 2021 года неквалифицированным инвесторам нужно проходить тестирование, чтобы совершать сделки со сложными инструментами — вечные облигации иностранных эмитентов, зарубежные суборды, структурные облигации иностранных эмитентов, внебиржевые производные финансовые инструменты.
+                            p Со второго квартала 2022 еще ряд продуктов будет доступен только квалифицированным инвесторам.
+        .digest-row.digest-row--15
+            .digest-row-column
+                .digest-block.digest-block--special
+                    .digest-block-head
+                        .digest-block-head__icon
+                            img(src="inline(./img/icon-books_32x32.png)", width="32px")
+                        .digest-block-head__title Тесты могут усложнить
+                    br
+                    span Предлагают:
+                    ul
+                        li увеличить число вопросов с 7 до 12;
+                        li менять порядок вопросов местами, чтобы не допустить машинального списывания;
+                        li добавить индивидуальные вопросы. Например, рассчитать доходность рискованной акции перед ее покупкой.
+            .digest-row-column
+                .digest-block.digest-block--special
+                    .digest-block-head
+                        .digest-block-head__icon
+                            img(src="inline(./img/icon-note_32x32.png)", width="32px")
+                        .digest-block-head__title Тестирование клиентов перед покупкой ИСЖ и НСЖ
+                    p Во втором квартале 2022 года планируется принятие законопроекта, согласно которому страховщики смогут продавать полисы с инвестиционной составляющей только квалифицированным инвесторам или тем, кто перед покупкой успешно прошел тестирование.
+        .digest-section
+            .digest-row
+                .digest-row-column
+                    .digest-block.digest-block--special
+                        .digest-block-head
+                            .digest-block-head__icon
+                                img(src="inline(./img/icon-book_32x32.png)", width="32px")
+                            .digest-block-head__title Почему это важно
+                        p Закон призван защитить непрофессиональных инвесторов от рискованных сделок и привлечь внимание к необходимости повышать уровень финансовой грамотности.
+                        p
+                        p
+                .digest-row-column
+                    .digest-image.digest-image--abs
+                        img(src="inline(./views/january_2022/img/image-january_animals.png)")
+                    .digest-block
+                        .digest-section__title.digest-section__title--white.digest-section__title--centered Законодательное регулирование — ликвидация банковского мисселинга

@@ -24,18 +24,6 @@ if (process.argv.includes("$dev_digest")) {
     this.contextProcess = "dev";
 }
 
-if (process.argv.includes("$build_report")) {
-    console.log({context: "report", contextProcess: "build"})
-    this.context = "report";
-    this.contextProcess = "build";
-}
-
-if (process.argv.includes("$dev_report")) {
-    console.log({context: "report", contextProcess: "dev"})
-    this.context = "report";
-    this.contextProcess = "dev";
-}
-
 let config = {
     build: {
         root: `./dist/`,
@@ -56,19 +44,13 @@ let config = {
         js: `./src/${this.context}/js/*.js`
     }
 };
+
 const buildConfig = {
     digest: {
         src: {
             pug: "./src/digest/current.pug",
             css: "./src/digest/css/styles.scss",
             js: "./src/digest/js/script.js"   
-        }
-    },
-    report: {
-        src: {
-            pug: "./src/report/index.pug",
-            css: "./src/report/css/base.scss",
-            js: "./src/report/js/script.js"
         }
     }
 }
@@ -177,7 +159,4 @@ const $build = series(
 
 
 exports.$dev_digest = $dev;
-exports.$dev_report = $dev;
-
 exports.$build_digest = $build;
-exports.$build_report = $build;
