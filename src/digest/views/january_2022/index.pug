@@ -199,57 +199,63 @@
     #digest-interesting.digest-box
         .digest-h1 Всем интересно
         .digest-content
-            .digest-section
+            .digest-section.digest-section--clean
                 .digest-row
-                    .digest-row-column
-                        .digest-image.digest-image--abs
-                            img(src="inline(./views/january_2022/img/image-january_classified.png)")
-                        .digest-block
-                            .digest-section__title.digest-section__title--white.digest-section__title--centered
-                                | Закон о неквалифицированных инвесторах.
-                                br
-                                |  Что нового?
-                    .digest-row-column
+                    .digest-row-column.digest-row-column--left
+                        .digest-block.digest-block--special
+                            .digest-image.digest-image--abs
+                                img(src="inline(./views/january_2022/img/image-january_classified.png)")
+                            .digest-block
+                                .digest-section__title.digest-section__title--white.digest-section__title--centered
+                                    | Закон о неквалифицированных инвесторах.
+                                    br
+                                    |  Что нового?
+                    .digest-row-column.digest-row-column--right
                         .digest-block.digest-block--special
                             .digest-block-head
                                 .digest-block-head__icon
                                     img(src="inline(./img/icon-bell_32x32.png)", width="32px")
                                 .digest-block-head__title Напоминаем
-                            p С 1 октября 2021 года неквалифицированным инвесторам нужно проходить тестирование, чтобы совершать сделки со сложными инструментами — вечные облигации иностранных эмитентов, зарубежные суборды, структурные облигации иностранных эмитентов, внебиржевые производные финансовые инструменты.
-                            p Со второго квартала 2022 еще ряд продуктов будет доступен только квалифицированным инвесторам.
-        .digest-row.digest-row--15
-            .digest-row-column
-                .digest-block.digest-block--special
-                    .digest-block-head
-                        .digest-block-head__icon
-                            img(src="inline(./img/icon-books_32x32.png)", width="32px")
-                        .digest-block-head__title Тесты могут усложнить
-                    br
-                    span Предлагают:
-                    ul
-                        li увеличить число вопросов с 7 до 12;
-                        li менять порядок вопросов местами, чтобы не допустить машинального списывания;
-                        li добавить индивидуальные вопросы. Например, рассчитать доходность рискованной акции перед ее покупкой.
-            .digest-row-column
-                .digest-block.digest-block--special
-                    .digest-block-head
-                        .digest-block-head__icon
-                            img(src="inline(./img/icon-note_32x32.png)", width="32px")
-                        .digest-block-head__title Тестирование клиентов перед покупкой ИСЖ и НСЖ
-                    p Во втором квартале 2022 года планируется принятие законопроекта, согласно которому страховщики смогут продавать полисы с инвестиционной составляющей только квалифицированным инвесторам или тем, кто перед покупкой успешно прошел тестирование.
-        .digest-section
-            .digest-row
-                .digest-row-column
-                    .digest-block.digest-block--special
-                        .digest-block-head
-                            .digest-block-head__icon
-                                img(src="inline(./img/icon-book_32x32.png)", width="32px")
-                            .digest-block-head__title Почему это важно
-                        p Закон призван защитить непрофессиональных инвесторов от рискованных сделок и привлечь внимание к необходимости повышать уровень финансовой грамотности.
-                        p
-                        p
-                .digest-row-column
-                    .digest-image.digest-image--abs
-                        img(src="inline(./views/january_2022/img/image-january_animals.png)")
-                    .digest-block
-                        .digest-section__title.digest-section__title--white.digest-section__title--centered Законодательное регулирование — ликвидация банковского мисселинга
+                            p
+                                | С 1 октября 2021 года неквалифицированным инвесторам нужно проходить тестирование, чтобы совершать сделки со сложными инструментами — вечные облигации иностранных эмитентов, зарубежные суборды, структурные облигации иностранных эмитентов, внебиржевые производные финансовые инструменты.
+                                br
+                                br
+                                |  Со второго квартала 2022 еще ряд продуктов будет доступен только квалифицированным инвесторам.
+            .digest-section.digest-section--clean
+                .digest-row.digest-row--15
+                    .digest-row-column
+                        .digest-block.digest-block--special
+                            .digest-block-head
+                                .digest-block-head__icon
+                                    img(src="inline(./img/icon-books_32x32.png)", width="32px")
+                                .digest-block-head__title Тесты могут усложнить
+                            br
+                            span Предлагают:
+                            ul
+                                li увеличить число вопросов с 7 до 12;
+                                li менять порядок вопросов местами, чтобы не допустить машинального списывания;
+                                li добавить индивидуальные вопросы. Например, рассчитать доходность рискованной акции перед ее покупкой.
+                    .digest-row-column
+                        .digest-block.digest-block--special
+                            .digest-block-head
+                                .digest-block-head__icon
+                                    img(src="inline(./img/icon-note_32x32.png)", width="32px")
+                                .digest-block-head__title Тестирование клиентов перед покупкой ИСЖ и НСЖ
+                            p Во втором квартале 2022 года планируется принятие законопроекта, согласно которому страховщики смогут продавать полисы с инвестиционной составляющей только квалифицированным инвесторам или тем, кто перед покупкой успешно прошел тестирование.
+            .digest-section.digest-section--clean
+                .digest-row
+                    .digest-row-column.digest-row-column--left
+                        .digest-block.digest-block--special
+                            .digest-block-head
+                                .digest-block-head__icon
+                                    img(src="inline(./img/icon-book_32x32.png)", width="32px")
+                                .digest-block-head__title Почему это важно
+                            p Закон призван защитить непрофессиональных инвесторов от рискованных сделок и привлечь внимание к необходимости повышать уровень финансовой грамотности.
+                            p
+                            p
+                    .digest-row-column.digest-row-column--right
+                        .digest-block.digest-block--special
+                            .digest-image.digest-image--abs
+                                img(src="inline(./views/january_2022/img/image-january_animals.png)")
+                            .digest-block
+                                .digest-section__title.digest-section__title--white.digest-section__title--centered Законодательное регулирование — ликвидация банковского мисселинга
