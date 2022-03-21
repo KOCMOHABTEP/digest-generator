@@ -150,7 +150,6 @@ $box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
 
 .digest-row-column {
     flex: 1;
-    overflow: hidden;
     position: relative;
 
     &--4 {
@@ -241,7 +240,6 @@ $box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
     margin: 30px 0;
     background: #ffffff;
     border-radius: 20px;
-    overflow: hidden;
     box-shadow: $box-shadow;
     position: relative;
 
@@ -459,6 +457,20 @@ $box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
 .digest-motivation-body {
     font-size: 14px;
     font-weight: 300;
+}
+
+.digest-photo {}
+
+.digest-photo__image {
+    width: 100%;
+    max-height: 400px;
+    margin-bottom: 8px;
+    border-radius: 20px;
+}
+
+.digest-photo__caption {
+    color: #848484;
+    font-size: 14px;
 }
 
 

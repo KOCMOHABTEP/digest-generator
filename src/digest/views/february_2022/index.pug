@@ -1,0 +1,269 @@
+// inject-style src="./dist/css/styles.css"
+// inject:script:js
+// endinject
+
+.digest
+    .digest-menu
+        a.digest-menu__item(data-custom-anchor href="#digest-ratings") РЕЙТИНГИ И СБОРЫ
+        a.digest-menu__item(data-custom-anchor href="#digest-herald") ВЕСТНИК СТРАТЕГИЙ
+        a.digest-menu__item(data-custom-anchor href="#digest-dynamics") ДИНАМИКА
+        a.digest-menu__item(data-custom-anchor href="#digest-read") ПОЧИТАТЬ
+        a.digest-menu__item(data-custom-anchor href="#digest-interesting") ВСЕМ ИНТЕРЕСНО
+
+    //- Разделение блока
+    //- Рейтинги и сборы
+    #digest-ratings.digest-box
+        .digest-h1 Рейтинги и сборы
+        p
+            b Для каждого дайджеста мы анализируем статистику по сборам текущего квартала и определяем лучших сотрудников. Они усердно работали и показали лучший результат.
+        p
+            b Уверены, достижения ваших коллег станут хорошим примером и вдохновят вас на активные продажи!
+
+        .digest-section
+            .digest-section-head
+                .digest-section-heading
+                    .digest-section-heading-item.digest-section-heading-item--left
+                        img(src="inline(./img/lp-digest-heading--left.png)")
+                    .digest-section-heading-item.digest-section-heading-item--center
+                        .digest-section-heading-item__title Лучший сотрудник макрорегиона
+                            .digest-section-heading-item__caption I квартал
+                    .digest-section-heading-item.digest-section-heading-item--right
+                        img(src="inline(./img/lp-digest-heading--right.png)")
+            .digest-section-body
+                table.digest-table
+                    tr
+                        td.digest-table__cell Северный Кавказ
+                        td.digest-table__cell
+                            b Марина Давыденко
+                        td.digest-table__cell.digest-table__cell--red
+                            b 5 000 000 ₽
+                    tr
+                        td.digest-table__cell Урал
+                        td.digest-table__cell
+                            b Мария Страшникова
+                        td.digest-table__cell.digest-table__cell--red
+                            b 4 020 000 ₽
+                    tr
+                        td.digest-table__cell Центр
+                        td.digest-table__cell
+                            b Лилия Латышева
+                        td.digest-table__cell.digest-table__cell--red
+                            b 3 839 800 ₽
+                    tr
+                        td.digest-table__cell Южное Поволжье
+                        td.digest-table__cell
+                            b Надежда Муталапова
+                        td.digest-table__cell.digest-table__cell--red
+                            b 3 650 060 ₽
+                    tr
+                        td.digest-table__cell Северное Поволжье
+                        td.digest-table__cell
+                            b Анастасия Стушнова
+                        td.digest-table__cell.digest-table__cell--red
+                            b 3 000 000 ₽
+                    tr
+                        td.digest-table__cell Москва
+                        td.digest-table__cell
+                            b Надежда Сапожникова
+                        td.digest-table__cell.digest-table__cell--red
+                            b 2 600 000 ₽
+        .digest-section
+            .digest-section-head
+                .digest-section-heading
+                    b Лучшие областные центры
+            .digest-section-body
+                .digest-row
+                    .digest-row-column
+                        .digest-section-block
+                            .digest-section-block-image
+                                img(src="inline(./views/january_2022/img/lp-digest-map-pin.png)")
+                            .digest-section-block-content
+                                .digest-section-block-content__text
+                                    b Москва Восток
+                                .digest-section-block-content__text.digest-section-block-content__text--price
+                                    b 32 736 714 ₽
+                    .digest-row-column
+                        .digest-section-block
+                            .digest-section-block-image
+                                img(src="inline(./views/january_2022/img/lp-digest-map-pin.png)")
+                            .digest-section-block-content
+                                .digest-section-block-content__text
+                                    b Воронеж
+                                .digest-section-block-content__text.digest-section-block-content__text--price 27 491 524 ₽
+                    .digest-row-column
+                        .digest-section-block
+                            .digest-section-block-image
+                                img(src="inline(./views/january_2022/img/lp-digest-map-pin.png)")
+                            .digest-section-block-content
+                                .digest-section-block-content__text
+                                    b Пермь
+                                .digest-section-block-content__text.digest-section-block-content__text--price 24 845 008 ₽
+
+    //- Разделение блока
+    //- Вестник стратегий
+    #digest-herald.digest-box
+        .digest-h1 Вестник стратегий
+        //- Блок 1
+        .digest-content
+            .digest-image
+                img(src="inline(./views/february_2022/img/block_1.png)")
+            .digest-h3 Exxon mobil проведет реструктуризацию
+            .digest-label Важно для стратегии «Драйверы роста»
+            p
+                | Exxon Mobil объединит бизнес в химической отрасли с нефтепереработкой, а также поставит свое подразделение, занимающееся зеленой энергетикой, на один уровень с другими. Об этом сообщает Reuters.
+                br
+                | Масштабная реструктуризация позволит компании снизить расходы, на чем настаивают инвесторы-активисты в совете директоров. Ранее Exxon поставила цель сократить операционные расходы на $6 млрд в 2022 году. Кроме того, Exxon перенесет свою штаб-квартиру в Хьюстон, штат Техас. Ожидается, что программа реорганизации начнется 1 апреля и завершится к 2023 году.
+        //- Блок 2
+        .digest-content
+            .digest-image
+                img(src="inline(./views/february_2022/img/block_2.png)")
+            .digest-h3 Сотрудничество Qualcomm и Ferrari
+            .digest-label Важно для стратегии «Драйверы роста»
+            ul
+                li
+                    p Новые чипы. В машины Ferrari будут внедрять последние автомобильные технологии — Snapdragon Digital Chassis. Это «цифровое шасси» включает в себя программы и системы помощи водителю. Фактически, Snapdragon Digital Chassis — это цифровая кабина или операционная система, на которую автопроизводитель может установить любые сервисы.
+                li
+                    p Спонсорство. Также Qualcomm выступит спонсором команды Scuderia Ferrari Formula 1 в начале гоночного сезона FIA Formula One World Championship™ 2022 года, когда платформа Snapdragon будет использоваться в новых одноместных автомобилях Scuderia Ferrari F1-75. Еще Qualcomm станет премиум-партнером киберспортивной команды итальянской компании.
+
+        //- Блок 3
+        .digest-content
+            .digest-image
+                img(src="inline(./views/february_2022/img/block_3.png)")
+            .digest-h3 Новости Citrix Systems
+            .digest-label Важно для стратегии «#оставайтесьдома 2.0»
+            p Американский разработчик программного обеспечения Citrix Systems принял предложение Vista Equity Partners и Evergreen Coast Capital по выкупу компании за $16,5 млрд. Об этом сообщает The Wall Street Journal. По данным издания, текущие владельцы ценных бумаг  компании получат по $104 за акцию, что на 2% выше цены закрытия торгов в понедельник. Vista и Evergreen планируют объединить Citrix с Tibco Software, находящейся в портфолио Vista и занимающейся предоставлением программного обеспечения для управления бизнес-данными. В результате этого слияния партнеры намерены создать предприятие, которое будет обслуживать более 400 тыс. корпоративных клиентов в 100 странах мира.
+        //- Блок 4
+        .digest-content
+            .digest-image
+                img(src="inline(./views/february_2022/img/block_4.png)")
+            .digest-h3 Ocado —  экспансия во Францию
+            .digest-label Важно для стратегии «#оставайтесьдома 2.0»
+            p Британская платформа программного обеспечения и робототехники Ocado Group подписала меморандум о взаимопонимании (MoU) с французской розничной компанией Groupe Casino для расширения партнерства между двумя компаниями.В соответствии с Меморандумом о взаимопонимании компании создадут эксклюзивное совместное предприятие для поддержки разработки и управления одно- или многопользовательскими центрами обслуживания клиентов (CFC) во Франции.
+            p Ocado и Groupe Casino будут предоставлять логистические услуги, включая управление проектами для создания и настройки CFC, а также услуги по найму и управлению операциями для будущих CFC.
+            p Ocado также предложит свои автоматизированные решения и программное обеспечение для всех продовольственных ритейлеров во Франции. Генеральный директор Ocado Group Тим Штайнер сказал: «Наше растущее партнерство и живые операции в Иль-де-Франс установили самую высокую планку для опыта, который французские потребители могут ожидать от онлайн-продуктов».
+        //- Блок 5
+        .digest-content
+            .digest-image
+                img(src="inline(./views/february_2022/img/block_5.png)")
+            .digest-h3 Vodafone Business объединяется с RingCentral
+            .digest-label Важно для стратегии «#оставайтесьдома 2.0»
+            p Vodafone объединилась с поставщиком корпоративных облачных коммуникаций RingCentral, чтобы запустить новую платформу для поддержки расширенного сотрудничества сотрудников после роста удаленной работы.
+            p Новая платформа унифицированных коммуникаций будет особенно важна для организаций, готовящихся к последствиям отключения в Великобритании в 2025 году существующих сетей ISDN и PSTN, от которых все еще зависит подавляющее большинство предприятий.
+            p Ив Десмет, вице-президент RingCentral по глобальным поставщикам услуг в регионе EMEA (Европа, Ближний Восток и Африка), сказал: «В RingCentral мы сосредоточены на том, чтобы предоставить людям наилучшие коммуникационные возможности с помощью командных сообщений, видеоконференций и облачной телефонной системы. Объединив мощь и сильные стороны Vodafone с лидерством RingCentral в области унифицированных коммуникаций, мы даем людям коммуникационные возможности, необходимые им для выполнения своей работы, с помощью единого мобильного приложения. Кроме того, наши открытые платформы и совместные инновации открывают новые пути к повышению производительности и вовлеченности во всем мире».
+
+    //- Разделение блока
+    //- Динамика стратегий
+    #digest-dynamics.digest-box
+        .digest-h1 Динамика стратегий
+        .digest-image
+            img(src="inline(./views/february_2022/img/chart-strategy-february_1.png)")
+        .digest-image
+            img(src="inline(./views/february_2022/img/chart-strategy-february_2.png)")
+        .digest-image
+            img(src="inline(./views/february_2022/img/chart-strategy-february_3.png)")
+
+    //- Разделение блока
+    //- Что происходит на рынках
+    #digest-read.digest-box
+        .digest-h1
+            | Переломный февраль
+        .digest-content
+            .digest-image
+                img(src="inline(./views/february_2022/img/image-february_read.png)")
+            p
+                b В феврале на американском фондовом рынке преобладали негативные настроения, что привело к снижению S&P 500 и Nasdaq 100 по итогам месяца на 3% и 5% соответственно
+            .digest-h4 Главные цифры
+            .digest-label.digest-label--strong
+                b — 3 %
+                |  –S&P 500
+                br
+                b — 5 %
+                |  – NASDAQ 100.
+            p Главные опасения были связаны с высокой инфляцией в США, которая по итогам января составила 7.5% (в декабре 2021 г. — 7.0%), что соответствует максимуму за последние 40 лет. Инвесторы опасаются, что инфляция окажет большое влияние на отчетности компаний и приведет к снижению прогнозов, что выльется в падение котировок. В частности, на февраль приходился пик сезона отчетностей, и большинство компаний указали на инфляционные риски в 2022 г., что для бизнеса означает рост затрат, в первую очередь, на труд, и снижение прибыли.
+            p Продолжая тему отчетностей, стоит отметить, что 80% компаний превзошли прогнозы, среднее превышение составило 10%. Однако эти данные нельзя рассматривать как позитивный фактор: исторически процент превысивших прогнозы компаний был выше, при этом большинство отчитавшихся в феврале компаний предпочло не давать прогнозы на 2022 г., 50 их ухудшили и лишь 20 улучшили.
+            p Основным инструментом борьбы с высокой инфляцией традиционно выступает повышение центробанками ставок. ФРС США планирует начать цикл роста в марте, при этом прогноз — рост на 25 базисных пунктов, но не исключается рост сразу на 50. К процентным ставкам наиболее чувствительны быстрорастущие убыточные компании, которые как правило относятся к технологическому сектору, в частности, к интернет-индустрии и разработке программного обеспечения. По этой причине динамика Nasdaq 100 (-5%), который покрывает преимущественно технологический сектор, была хуже S&P 500 (-3%).
+            p Обособленно от новостей рынка стояла тема геополитики в связи с началом военной операции России на Украине 24 февраля и введением Западом основных санкций против России 28 февраля. В обоих эпизодах американские индексы падали на 2-3%, однако на следующий день отрастали. В целом американские индексы за период, охватывающий эти события, не изменились, поэтому можно сделать вывод, что фактор геополитики пока оказывал незначительное влияние на фондовый рынок США. Этому есть объяснение: у США небольшой товарооборот с Россией; рынок считал, что военная операция не повлияет на мировую экономику; локальные конфликты скоротечны и, как правило, приводят к сильному отскоку акций после урегулирования споров. Необходимо отметить, что на текущий момент (в начале марта) рынки начинают ощущать последствия санкций против России: с момента начала военной операции нефть марки Brent выросла c $95 до $110 за баррель, газ в Европе подорожал c $900 до $2000 за тыс кубометров, стоимость других основных ресурсов выросла на 20-40%. От официальных лиц Европы и США все чаще исходят слова о том, что рост цен на ресурсы приведет к еще одному витку роста цен на фоне и так рекордной за последние десятилетия инфляции.
+            p К положительным событиям относится опубликованная статистика США по рынку труда: в январе экономика прибавила 467 тыс рабочих мест – в 3 раза выше ожиданий. Число заявок на пособия по безработице составило 238 тыс при прогнозе 245 тыс – у минимумов за 12 месяцев.
+            p В феврале продолжилась ротация внутри S&P 500 из акций роста в акции стоимости. Как и месяц назад лучшую динамику показали компании энергетического (+6%) и финансового секторов (-1%), худшую — технологические (-5%) и телекоммуникационные компании (-7%).
+            p Опережающая динамика энергетического сектора вызвана ралли цен на нефть: за февраль стоимость Brent выросла на 11% до $101 за баррель. Дефицит нефти в мире, который был вызван недоинвестированием отрасли в период пандемии Covid-19, теперь подпитывается ограничениями, с которыми столкнулись российские нефтегазовые компании после введения санкций Запада против России. Инвестбанки допускают рост Brent до $200 За баррель.
+            p Среди технологических компаний по-прежнему хуже выглядел интернет-сектор (-10%), так как он состоит преимущественно из быстрорастущих убыточных бизнесов, которые больше всех страдают от ожидаемого роста процентных ставок.
+
+    //- Разделение блока
+    //- ИНТЕРЕСНО
+    #digest-interesting.digest-box
+        .digest-h1 Всем интересно
+        .digest-content
+            .digest-section.digest-section--clean
+                .digest-row
+                    .digest-row-column.digest-row-column--left
+                        .digest-block.digest-block--special
+                            .digest-image.digest-image--abs
+                                img(src="inline(./views/february_2022/img/image-february-interesting_1.png)")
+                            .digest-block
+                                .digest-section__title.digest-section__title--white.digest-section__title--centered
+                                    | Санкции — что это и насколько они эффективны?
+                    .digest-row-column.digest-row-column--right
+                        .digest-block.digest-block--special
+                            .digest-block-head
+                                .digest-block-head__icon
+                                    img(src="inline(./img/icon-dollars_32x32.png)", width="32px")
+                                .digest-block-head__title Санкции
+                            p Это экономический рычаг, применяемый участниками международной торговли, чтобы принудить друг друга изменить политический курс. Это может быть запрет на ввоз или вывоз каких-то товаров, запрет  на проведение определенных банковских операций, запрет авиакомпаниям на полеты в ту или иную страну и так далее.
+            .digest-section.digest-section--clean
+                .digest-row.digest-row--15
+                    .digest-row-column
+                        .digest-block.digest-block--special
+                            .digest-block-head
+                                .digest-block-head__icon
+                                    img(src="inline(./img/icon-ball_32x32.png)", width="32px")
+                                .digest-block-head__title Санкционный футбол
+                            p Они усложняют жизнь обеим сторонам: неизменно вызывают ответные меры  и наносят ущерб всем участникам в той или иной степени. Получается эдакий «санкционный футбол» — стороны стреляют запретами, усложняя работу компаниям.  А те вынуждены поднимать цены на свою продукцию. Проще говоря, санкции способствуют росту инфляции, что плохо  для любой страны.
+                    .digest-row-column
+                        .digest-block.digest-block--special
+                            .digest-block-head
+                                .digest-block-head__icon
+                                    img(src="inline(./img/icon-chart_32x32.png)", width="32px")
+                                .digest-block-head__title Что касается наших стратегий
+                            p
+                                | Санкции им не угрожают, так как они торгуются на международных рынках.  За исключением трех продуктов:  «Верность традициям», «Титаны России»  и «Российские акции».  
+                                br
+                                br
+                                | Эти программы продавались только в Альфа-Банке.
+            .digest-section.digest-section--clean
+                .digest-row
+                    .digest-row-column.digest-row-column--left
+                        .digest-block.digest-block--special
+                            .digest-block-head
+                                .digest-block-head__icon
+                                    img(src="inline(./img/icon-map_32x32.png)", width="32px")
+                                .digest-block-head__title Эффективность санкций
+                            p Многие эксперты сходятся во мнении,  что санкции не самый эффективный способ урегулирования конфликтов, так как ведет к дополнительному напряжению. Санкции, введенные против России сейчас, абсолютно беспрецедентны  и влияют в том числе и на мировую экономику.
+                            p
+                            p
+                    .digest-row-column.digest-row-column--right
+                        .digest-block.digest-block--special
+                            .digest-image.digest-image--abs
+                                img(src="inline(./views/february_2022/img/image-february-interesting_2.png)")
+                            .digest-block
+                                .digest-section__title.digest-section__title--white.digest-section__title--centered
+                                    | Остается надеятся, что  по мере урегулирования конфликта, санкции будут постепенно отменены.
+                                    br
+                                    |  С другой стороны — это возможность еще раз перейти к импортозамещению во многих отраслях.
+    //- Разделение блока
+    //- ФОТОГРАФИИ
+    #digest-celebrate.digest-box
+        .digest-h1 Новогодние вечеринки 3.0
+        .digest-content
+            .digest-section.digest-section--clean
+                .digest-row
+                    .digest-row-column.digest-row-column--left
+                        .digest-photo
+                            img.digest-photo__image(src="inline(./views/february_2022/img/image-february-photo_1.png)")
+                            .digest-photo__caption Набережные Челны
+                    .digest-row-column.digest-row-column--right
+                        .digest-photo
+                            img.digest-photo__image(src="inline(./views/february_2022/img/image-february-photo_2.png)")
+                            .digest-photo__caption Казань
+            p В конце января мы провели новогодние вечеринки 3.0 в городах-победителях по итогам нашей мотивационной программы — в Казани и в Набережных Челнах.
+            p
+                b Поздравляем МР Северное Поволжье и желаем успехов в дальнейшей работе!
