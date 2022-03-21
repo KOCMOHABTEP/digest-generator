@@ -34,32 +34,32 @@ let config = {
         pug: `./dist/`,
     },
     src: {
-        pug: `./src/${this.context}/*.pug`,
-        css: `./src/${this.context}/css/*.scss`,
-        js: `./src/${this.context}/js/*.js`
+        pug: `./src/digest/*.pug`,
+        css: `./src/digest/css/*.scss`,
+        js: `./src/digest/js/*.js`
     },
     watch: {
-        pug: `./src/${this.context}/**/*.pug`,
-        css: `./src/${this.context}/css/**/*.scss`,
-        js: `./src/${this.context}/js/*.js`
+        pug: `./src/digest/**/*.pug`,
+        css: `./src/digest/css/**/*.scss`,
+        js: `./src/digest/js/*.js`
     }
 };
 
 const buildConfig = {
-    digest: {
-        src: {
-            pug: "./src/digest/current.pug",
-            css: "./src/digest/css/styles.scss",
-            js: "./src/digest/js/script.js"   
-        }
+    src: {
+        pug: "./src/digest/current.pug",
+        css: "./src/digest/css/styles.scss",
+        js: "./src/digest/js/script.js"
     }
 }
 
 // это конфиг для build
-config = {
-    ...config,
-    ...(this.contextProcess === "build" ? buildConfig[this.context] : null),
-};
+if (this.contextProcess === "build") {
+    config = {
+        ...config,
+        ...buildConfig
+    }
+}
 
 
 const buildPug = () => {
